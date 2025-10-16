@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  sentraip_mcp:
+    build: .
+    container_name: sentraip_mcp
+    environment:
+      - SENTRAIP_BEARER_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxx
+    ports:
+      - "8081:8081"
